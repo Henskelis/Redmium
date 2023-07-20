@@ -70,7 +70,7 @@ impl User {
   ///   chrono::NaiveDate::from_ymd_opt(2015, 10, 30)
   ///     .unwrap()
   ///     .and_hms_opt(12, 9, 31)
-  ///     .unwrap()
+  ///     .unwrap(),
   /// );
   /// ```
   ///
@@ -82,7 +82,7 @@ impl User {
   /// something is wrong with the data like a required field missing or a number
   /// too big to fit in the expected primitive type.
   pub fn build_from_json(json: &str) -> Result<Self, serde_json::Error> {
-    let user: User = serde_json::from_str(json)?;
+    let user: Self = serde_json::from_str(json)?;
     Ok(user)
   }
 
@@ -144,7 +144,7 @@ impl User {
   ///
   /// assert_eq!(
   ///   expected_json.parse::<serde_json::Value>().unwrap(),
-  ///   actual_json.parse::<serde_json::Value>().unwrap()
+  ///   actual_json.parse::<serde_json::Value>().unwrap(),
   /// );
   /// ```
   pub fn to_json(&self) -> String {
