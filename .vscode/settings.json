@@ -1,7 +1,9 @@
 {
+  "prettier.prettierPath": "./node_modules/prettier",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "rust-analyzer.showUnlinkedFileNotification": false,
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "editor.formatOnSave": true,
-  "rust-analyzer.showUnlinkedFileNotification": false
+  }
 }

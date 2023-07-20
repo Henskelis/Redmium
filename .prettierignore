@@ -1,0 +1,6 @@
+# Ignore dependencies and lock files
+node_modules
+pnpm-lock.yaml
+
+# Ignore Rust files
+src-tauri
