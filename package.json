@@ -1,8 +1,8 @@
 {
   "name": "redmium",
   "private": true,
-  "version": "0.0.0",
   "type": "module",
+  "license": "AGPL-3.0-or-later",
   "scripts": {
     "prepare": "husky install",
     "dev": "vite",
@@ -10,6 +10,7 @@
     "preview": "vite preview",
     "tauri": "tauri"
   },
+  "packageManager": "pnpm@8.6.9",
   "dependencies": {
     "@tauri-apps/api": "^1.4.0",
     "react": "^18.2.0",
