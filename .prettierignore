@@ -2,5 +2,6 @@
 node_modules
 pnpm-lock.yaml
 
-# Ignore Rust files
-src-tauri
+# Ignore backend directory (Rust files) except JSON files
+src-tauri/*
+!src-tauri/*.json

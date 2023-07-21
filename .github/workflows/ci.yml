@@ -52,11 +52,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-pnpm-store-
 
-      - name: Install the Node dependencies
+      - name: Install the frontend dependencies
         run: pnpm install
-
-      - name: Test the Build pipeline
-        uses: tauri-apps/tauri-action@v0
 
       - name: Run the backend tests
         run: cargo test --manifest-path=./src-tauri/Cargo.toml --verbose
+
+      - name: Test the Build pipeline
+        uses: tauri-apps/tauri-action@v0
